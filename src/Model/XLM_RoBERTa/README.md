@@ -12,6 +12,7 @@ model = checkpoint['model']
 ```
 To detect a toxic span:
 ```python
+import torch
 from predict import predict
 
 # Load model checkpoint
