@@ -24,5 +24,5 @@ print("predict: ", temp)
 ```
 
 ## Checkpoints for Pre-trained Models
-- [XLM-RoBERTa Base]([https://drive.google.com/drive/folders/1PlqnetfFjwo_n-uzxSXlIRfe5wcMB967?usp=sharing])
-- [XLM-RoBERTa Large]([https://drive.google.com/drive/folders/1PlqnetfFjwo_n-uzxSXlIRfe5wcMB967?usp=sharing])
+- [XLM-RoBERTa Base](https://drive.google.com/drive/folders/1PlqnetfFjwo_n-uzxSXlIRfe5wcMB967?usp=sharing)
+- [XLM-RoBERTa Large](https://drive.google.com/drive/folders/1PlqnetfFjwo_n-uzxSXlIRfe5wcMB967?usp=sharing)
