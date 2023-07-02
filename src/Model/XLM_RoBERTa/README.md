@@ -3,6 +3,8 @@
 ## Usage
 To load the model
 ```python
+import torch
+
 checkpoint = "checkpoint_path"
 # Load model checkpoint 
 checkpoint = torch.load(checkpoint)
