@@ -21,6 +21,7 @@ text = "insert text here"
 t, ibo_, temp = predict(model, text)
 print(ibo_, t)
 print("predict: ", temp)
+```
 
 ## Checkpoints for Pre-trained Models
 - [XLM-RoBERTa Base]([https://drive.google.com/drive/folders/1PlqnetfFjwo_n-uzxSXlIRfe5wcMB967?usp=sharing])
