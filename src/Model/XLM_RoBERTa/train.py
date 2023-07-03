@@ -1,7 +1,7 @@
 from simpletransformers.ner import NERModel, NERArgs
 from sklearn.metrics import accuracy_score
 
-def train_xlm_roberta(model_type, train_data, eval_data, tags, num_epochs, learning_rate, train_batch, eval_batch):
+def train_xlm_roberta(model, train_data, eval_data, tags, num_epochs, learning_rate, train_batch, eval_batch):
 
     num_examples = train_data.shape[0]  # replace with the size of your dataset
     batch_size = 8  # replace with your batch size
@@ -31,8 +31,4 @@ def train_xlm_roberta(model_type, train_data, eval_data, tags, num_epochs, learn
     args.early_stopping_metric_minimize = False
     args.early_stopping_patience = 5
 
-    if model_type == "base":
-        model = NERModel("xlmroberta", "xlm-roberta-base", labels=tags, args=args)
-    if model_type == "large":
-        model = NERModel("xlmroberta", "xlm-roberta-base", labels=tags, args=args)
     model.train_model(train_data, validation_data=eval_data, acc=accuracy_score)
