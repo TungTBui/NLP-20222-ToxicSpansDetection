@@ -71,10 +71,26 @@ class WordsTagger:
 
 def predict(model_dir, sentence):
     device = 0
-    result = ""
+
     results = WordsTagger(model_dir, device)([sentence])
-    for objs in results:
-        result = json.dumps(objs[0], ensure_ascii=False)
-        break
-    return ast.literal_eval(result)
+    result_1 = json.dumps(results[0][0], ensure_ascii=False)
+    result_2 = json.dumps(results[1][0], ensure_ascii=False)
+    bio = ast.literal_eval(result_1)
+    tokens = sentence.split(" ")
+    bio = ast.literal_eval(result_1)
+    toxic_spans = []
+    toxic = []
+    i = 0
+    while i < len(bio):
+        if bio[i] == "B-T":
+          toxic = [tokens[i]]
+          for j in range(i+1, len(bio)):
+            if bio[j] != "I-T":
+              i = j - 1
+              break
+            toxic.append(tokens[j])
+          toxic_spans.append(" ".join(toxic))
+        i += 1
+    return toxic_spans
+
 
