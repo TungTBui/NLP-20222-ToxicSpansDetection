@@ -31,12 +31,11 @@ def model_filepath(model_dir):
     return join(model_dir, FILE_MODEL)
 
 
-def build_model(processor, load=True, verbose=False):
+def build_model(processor, load=True, verbose=False, model_path=model_filepath("/content/Model")):
     model = BiRnnCrf(len(processor.vocab), len(processor.tags),
                      embedding_dim=100, hidden_dim=128, num_rnn_layers=1)
 
     # weights
-    model_path = model_filepath("/content/Model")
     if exists(model_path) and load:
         state_dict = torch.load(model_path)
         model.load_state_dict(state_dict)

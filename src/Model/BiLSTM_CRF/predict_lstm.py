@@ -13,7 +13,7 @@ class WordsTagger:
         self.args = args
 
         self.preprocessor = Preprocessor(config_dir=model_dir, verbose=False)
-        self.model = build_model(self.preprocessor, verbose=False)
+        self.model = build_model(self.preprocessor, verbose=False, model_path=model_filepath(model_dir))
         self.device = running_device(device)
         self.model.to(self.device)
 
