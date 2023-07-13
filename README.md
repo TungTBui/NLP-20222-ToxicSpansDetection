@@ -3,8 +3,8 @@
 ## Code
 Clone this repository into any place you want.
 
+```bash
 git clone https://github.com/TungTBui/NLP-20222-ToxicSpansDetection
-
 cd NLP-20222-ToxicSpansDetection
 
 ## Usage
@@ -48,4 +48,19 @@ print("Toxic Spans Prediction: ", spans)
 ## Weights of Pre-trained Models
 
 You can download our models' pretrained weights [here](https://drive.google.com/drive/folders/1SjBnE290JYPUm-5q0faEYUgF19rJvSgu?usp=sharing)
+
+## Results
+
+Here're the Macro F1-score, Precision and Recall of the 3 model testing on the test set of the ViHos Dataset:
+
+| **Model**        | **F1** | **Precision** | **Recall** |
+|----------------- |------- |-------------- |---------- |
+| BiLSTM-CRF       | **0.789** | 0.804 | **0.799** |
+| XLM-R$_{base}$   | 0.753 | 0.787 | 0.765 |
+| XLM-R$_{Large}$  | 0.775 | **0.810** | 0.785 |
+| PhoBERT$_{base}$ | 0.761 | 0.792 | 0.773 |
+| PhoBERT$_{Large}$| 0.765 | 0.798 | 0.776 |
+
+
+
 
