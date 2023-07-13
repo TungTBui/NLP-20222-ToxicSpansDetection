@@ -58,13 +58,14 @@ You can download our models' pre-trained weights [here](https://drive.google.com
 
 Here're the Macro F1-score, Precision, and Recall of the 3 model testing on the test set of the ViHos Dataset:
 
-| **Model**        | **F1** | **Precision** | **Recall** |
-|----------------- |------- |-------------- |---------- |
-| BiLSTM-CRF       | **0.789** | 0.804 | **0.799** |
-| XLM-R$_{base}$   | 0.753 | 0.787 | 0.765 |
-| XLM-R$_{Large}$  | 0.775 | **0.810** | 0.785 |
-| PhoBERT$_{base}$ | 0.761 | 0.792 | 0.773 |
-| PhoBERT$_{Large}$| 0.765 | 0.798 | 0.776 |
+| **Model**            | **F1** | **Precision** | **Recall** |
+|--------------------- |------- |-------------- |---------- |
+| BiLSTM-CRF           | **0.789** | 0.804 | **0.799** |
+| XLM-R<sub>base</sub>   | 0.753 | 0.787 | 0.765 |
+| XLM-R<sub>Large</sub>  | 0.775 | **0.810** | 0.785 |
+| PhoBERT<sub>base</sub> | 0.761 | 0.792 | 0.773 |
+| PhoBERT<sub>Large</sub>| 0.765 | 0.798 | 0.776 |
+
 
 
 
