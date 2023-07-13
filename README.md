@@ -4,6 +4,7 @@
 Clone this repository into any place you want.
 
 git clone https://github.com/TungTBui/NLP-20222-ToxicSpansDetection
+
 cd NLP-20222-ToxicSpansDetection
 
 ## Usage
